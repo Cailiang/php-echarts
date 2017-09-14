@@ -70,4 +70,26 @@ return [
             
         ]
     ],
+
+    'pie' => [
+
+        'title' => ['left' => 'center'],
+
+        'tooltip' => ['trigger' => 'item', 'formatter' => '{a} <br/>{b}: {c} ({d}%)'],
+
+        'legend' => ['orient' => 'vertical', 'x' => 'left', 'data' => []],
+
+        'series' => [
+            'name' => '',
+            'type' => 'pie',
+            'radius' => ['40%', '70%'],
+            'avoidLabelOverlap' => 0,
+            'label' => [
+                'normal' => ['show' => 0, 'position' => 'center'],
+                'emphasis' => ['show' => 1, 'textStyle' => ['fontSize' => '30', 'fontWeight' => 'bold']]
+            ],
+            'labelLine' => ['normal' => ['show' => 0]],
+            'data' => [],
+        ]
+    ],
 ];
